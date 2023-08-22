@@ -74,14 +74,14 @@ body {
 }
 
 .buttons button:hover {
-  transition: 1s;
+  transition: 0.6s;
   background: linear-gradient(
     0deg,
     rgba(54, 155, 54, 0.644) 9%,
     rgba(86, 241, 9, 0.671) 47%,
     rgba(51, 156, 45, 0.678) 100%
   );
-  transition: 1s;
+  box-shadow: 1px 1px 10px 2px rgb(55, 243, 155);
 }
 
 .caixa-de-botoes {
