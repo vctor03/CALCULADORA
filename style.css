@@ -59,7 +59,7 @@ body {
   cursor: pointer;
   border-radius: 30px;
   border: none;
-  color: rgb(148, 238, 148);
+  color: rgb(255, 255, 255);
   background: linear-gradient(
     0deg,
     rgba(76, 74, 74, 1) 8%,
@@ -74,16 +74,25 @@ body {
 }
 
 .buttons button:hover {
-  transition: 0.7s;
+  transition: 1s;
   background: linear-gradient(
     0deg,
-    rgba(19, 83, 19, 1) 9%,
-    rgba(102, 203, 52, 1) 47%,
-    rgba(21, 60, 19, 1) 100%
+    rgba(54, 155, 54, 0.644) 9%,
+    rgba(86, 241, 9, 0.671) 47%,
+    rgba(51, 156, 45, 0.678) 100%
   );
-  color: #ffffff;
+  transition: 1s;
 }
 
 .caixa-de-botoes {
   margin-bottom: 60px;
+}
+
+.relogio {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #07fd59;
+  padding-bottom: 20px;
+  font-size: 1.2rem;
 }
