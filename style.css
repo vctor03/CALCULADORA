@@ -5,25 +5,32 @@
 }
 
 body {
-  background-color: #28242b;
-  font-family: cursive;
-  line-height: 3;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
 }
 
-header {
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.content {
   text-align: center;
-  padding: 20px;
-  background: linear-gradient(
-    0deg,
-    rgba(231, 195, 240, 0.4382900280898876) 0%,
-    rgba(185, 17, 240, 0.8435749299719888) 0%,
-    rgba(112, 35, 138, 0.8715861344537815) 57%
-  );
-  color: #fff;
-}
-
-header h1 {
-  font-size: 2em;
+  color: white;
+  font-size: 24px;
 }
 
 .calculator {
@@ -40,7 +47,7 @@ header h1 {
   border-radius: 10px;
   border: none;
   text-align: center;
-  color: rgb(254, 253, 255);
+  color: rgb(112, 243, 112);
   background-color: #585758;
 }
 
@@ -52,7 +59,7 @@ header h1 {
   cursor: pointer;
   border-radius: 30px;
   border: none;
-  color: rgb(217, 142, 255);
+  color: rgb(148, 238, 148);
   background: linear-gradient(
     0deg,
     rgba(76, 74, 74, 1) 8%,
@@ -60,15 +67,21 @@ header h1 {
     rgba(38, 37, 37, 1) 100%
   );
 }
+
+.bubble-button:active {
+  transform: scale(0.8);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
 .buttons button:hover {
   transition: 0.7s;
   background: linear-gradient(
     0deg,
-    rgba(231, 195, 240, 0.4382900280898876) 0%,
-    rgba(185, 17, 240, 0.8435749299719888) 0%,
-    rgba(112, 35, 138, 0.8715861344537815) 57%
+    rgba(19, 83, 19, 1) 9%,
+    rgba(102, 203, 52, 1) 47%,
+    rgba(21, 60, 19, 1) 100%
   );
-  color: #fff;
+  color: #ffffff;
 }
 
 .caixa-de-botoes {
